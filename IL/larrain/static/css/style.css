@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(135deg, #ff9800, #e91e63);
+  }
+  
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+  
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.navbar-logo img {
+    width: 50px;
+    height: 50px;
+}
+  
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+  
+.navbar-item {
+    margin-left: 20px;
+}
+  
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+}
+  
+/* Estilos para el estado de inicio de sesión */
+.navbar-item--user {
+    margin-left: auto;
+}
+  
+.navbar-item--user .navbar-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+  
+.navbar-item--user .navbar-link i {
+    margin-right: 5px;
+}
+  
+/* Estilos para el menú de tres líneas */
+.navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+}
+  
+.navbar-toggle span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+  
+/* Estilos para animar el menú cuando se hace clic */
+.navbar-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+  
+.navbar-toggle.active span:nth-child(1),
+.navbar-toggle.active span:nth-child(3) {
+    transform: rotate(45deg);
+}
+  
